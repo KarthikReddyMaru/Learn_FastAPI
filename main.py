@@ -1,6 +1,7 @@
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
 def main():
-    print("Hello from learn-fastapi!")
-
-
-if __name__ == "__main__":
-    main()
+    return "Hello from learn-fastapi!"
